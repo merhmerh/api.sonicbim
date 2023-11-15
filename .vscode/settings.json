@@ -1,0 +1,4 @@
+{
+    "command": "-vscode-neovim.send",
+    "key": "ctrl+a"
+}
