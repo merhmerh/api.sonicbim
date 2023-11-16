@@ -24,6 +24,39 @@ SonicBIM, a Proof of Concept project, aims to revolutionizes BIM by improving ac
 
 # Documentation
 
+## List Projects
+
+This API endpoint list all registered Projects
+
+### Endpoint
+
+-   **URL:** `/api/list_projects`
+-   **HTTP Method:** GET
+
+#### Request URL
+
+```
+/api/sync_project?project_uuid=3e03f99a-e76d-49f4-9642-d598e9a7788b
+```
+
+#### Example Request Body
+
+```json
+[
+  {
+    "id": 12,
+    "project_uuid": "3e03f99a-e76d-49f4-9642-d598e9a7788b",
+    "created_at": "2023-11-15T16:04:20.573097+00:00",
+    "project_name": "3storey erection",
+    "project_address": "TS 18 LOT 01418K",
+    "project_number": "A1753-00355-2023",
+    "checksum": "7ed7aca5bf5d887cc329adda6acb2cd72f0e0c933abffeb94e9cfc52c883d019"
+  },
+  ...
+]
+
+```
+
 ## Register Project
 
 This API endpoint allows you to register a new project.

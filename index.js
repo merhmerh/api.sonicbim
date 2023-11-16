@@ -1,6 +1,8 @@
 import Fastify from 'fastify'
 import { registerProject } from './routes/register.js'
 import { syncProject } from './routes/syncProject.js'
+import { listProjects } from './routes/listProjects.js'
+
 import { supabase } from './routes/lib/helper.js'
 
 const app = Fastify()
@@ -12,6 +14,7 @@ app.get('/', (req, res) => {
 
 app.register(registerProject, { prefix: '/api' })
 app.register(syncProject, { prefix: '/api' })
+app.register(listProjects, { prefix: '/api' })
 
 app.listen({ port: 3000 }, (err, address) => {
 	if (err) throw err
