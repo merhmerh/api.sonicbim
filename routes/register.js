@@ -1,19 +1,13 @@
 import { v4 as uuid } from 'uuid'
-import { calcChecksum, supabase } from './lib/helper.js'
+import { calcChecksum, sendError, supabase } from './lib/helper.js'
 
 export function registerProject(fastify, opts, done) {
 	fastify.post('/register_project', async (req, res) => {
 		//check if body contain information
-		const { project_name, project_address, project_number } = req.body.project_info
+		const { project_name, project_address, project_number } = req.body
 
 		if (!project_name || !project_address || !project_number) {
-			return res
-				.code(400)
-				.send({
-					error: {
-						message: 'Missing Information. Requires project_name, project_address and project_number',
-					},
-				})
+			return sendError(res, 'Missing Information. Requires project_name, project_address and project_number')
 		}
 
 		const project_uuid = uuid()
@@ -23,7 +17,7 @@ export function registerProject(fastify, opts, done) {
 		const { data } = await supabase.from('projects').select().eq('checksum', checksum).limit(1).single()
 
 		if (data) {
-			return res.code(400).send({ message: 'Project already exist', data: data })
+			return sendError(res, 'Project already exist', { data })
 		}
 
 		//insert to database

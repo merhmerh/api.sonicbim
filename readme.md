@@ -39,20 +39,17 @@ This API endpoint allows you to register a new project.
 
 -   The request body should contain a JSON object with the following properties:
 
-    -   `project_info` (Object)
-        -   `project_name` (String): The name of the project (required).
-        -   `project_address` (String): The address of the project (required).
-        -   `project_number` (String): The project number (required).
+    -   `project_name` (String): The name of the project (required).
+    -   `project_address` (String): The address of the project (required).
+    -   `project_number` (String): The project number (required).
 
 #### Example Request Body
 
 ```json
 {
-	"project_info": {
-		"project_name": "3storey erection",
-		"project_address": "TS 18 LOT 01418K",
-		"project_number": "A1753-00355-2023"
-	}
+	"project_name": "3storey erection",
+	"project_address": "TS 18 LOT 01418K",
+	"project_number": "A1753-00355-2023"
 }
 ```
 
@@ -89,7 +86,7 @@ This API endpoint allows you to insert/update project model data with the databa
 ```json
 {
 	"project_uuid": "3e03f99a-e76d-49f4-9642-d598e9a7788b",
-	"data": [
+	"model_data": [
 		{
 			"id": 158742,
 			"category": "rooms",
@@ -98,6 +95,10 @@ This API endpoint allows you to insert/update project model data with the databa
 			"params": [
 				{
 					"param_name": "HazardousSubstances",
+					"extg_value": ""
+				},
+				{
+					"param_name": "SpaceName",
 					"extg_value": ""
 				}
 			]

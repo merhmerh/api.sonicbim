@@ -3,7 +3,7 @@ import { calcChecksum, sendError, supabase } from './lib/helper.js'
 
 export function syncProject(fastify, opts, done) {
 	fastify.post('/sync_project', async (req, res) => {
-		const { project_uuid, data: model_data } = req.body
+		const { project_uuid, model_data } = req.body
 
 		if (!project_uuid) return sendError(res, 'Missing project_uuid')
 		if (!model_data) return sendError(res, 'Missing data')
