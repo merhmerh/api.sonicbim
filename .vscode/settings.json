@@ -1,4 +1,10 @@
 {
-    "command": "-vscode-neovim.send",
-    "key": "ctrl+a"
+    "prettier.printWidth": 120,
+    "prettier.singleAttributePerLine": true,
+    "prettier.useTabs": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.semi": true,
+    "prettier.bracketSameLine": false,
+    "prettier.trailingComma": "es5",
 }
