@@ -11,10 +11,6 @@ const serverFactory = (handler, opts) => {
 };
 const fastify = Fastify({ serverFactory });
 
-fastify.get('/', (req, reply) => {
-	reply.send({ SonicBIM: 'Ready' });
-});
-
 fastify.register(routes);
 
 const opts = {
