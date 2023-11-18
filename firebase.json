@@ -16,8 +16,10 @@
     "rewrites": [
       {
         "source": "**",
-        "region": "asia-southeast1",
-        "function": "main"
+        "function": {
+          "functionId": "main",
+          "region": "asia-southeast1"
+        }
       }
     ]
   }

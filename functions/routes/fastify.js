@@ -16,7 +16,7 @@ export function routes(fastify, opts, done) {
 			}
 		}
 
-		res.send({ SONICBIM: 'Ready', routes: listRoutes });
+		res.send({ SONICBIM: 'Ready', version: '0.0.2', routes: listRoutes });
 	});
 
 	fastify.register(registerProject);
