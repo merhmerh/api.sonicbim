@@ -11,6 +11,10 @@ const serverFactory = (handler, opts) => {
 };
 const fastify = Fastify({ serverFactory });
 
+fastify.addContentTypeParser('application/json', {}, (req, body, done) => {
+	done(null, body.body);
+});
+
 fastify.register(routes);
 
 const opts = {
