@@ -1,0 +1,308 @@
+[debug] [2023-11-19T04:53:07.730Z] ----------------------------------------------------------------------
+[debug] [2023-11-19T04:53:07.731Z] Command:       /home/merh/.nvm/versions/node/v18.17.1/bin/node /home/merh/.local/share/pnpm/global/5/node_modules/firebase-tools/lib/bin/firebase.js emulators:start
+[debug] [2023-11-19T04:53:07.731Z] CLI Version:   12.9.1
+[debug] [2023-11-19T04:53:07.731Z] Platform:      linux
+[debug] [2023-11-19T04:53:07.731Z] Node Version:  v18.17.1
+[debug] [2023-11-19T04:53:07.735Z] Time:          Sun Nov 19 2023 12:53:07 GMT+0800 (Singapore Standard Time)
+[debug] [2023-11-19T04:53:07.735Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-19T04:53:07.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-19T04:53:07.770Z] > authorizing via signed-in user (arvinhow95@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-11-19T04:53:07.774Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-11-19T04:53:07.781Z] [hub] writing locator at /tmp/hub-sonicbim.json
+[debug] [2023-11-19T04:53:07.787Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-11-19T04:53:07.788Z] defaultcredentials: writing to file /home/merh/.config/firebase/arvinhow95_gmail_com_application_default_credentials.json
+[debug] [2023-11-19T04:53:07.789Z] Setting GAC to /home/merh/.config/firebase/arvinhow95_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/merh/.config/firebase/arvinhow95_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-19T04:53:07.790Z] > refreshing access token with scopes: []
+[debug] [2023-11-19T04:53:07.790Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-19T04:53:07.790Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-19T04:53:08.016Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-19T04:53:08.016Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-19T04:53:08.021Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim/adminSdkConfig [none]
+[debug] [2023-11-19T04:53:08.487Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim/adminSdkConfig 200
+[debug] [2023-11-19T04:53:08.487Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim/adminSdkConfig {"projectId":"sonicbim","storageBucket":"sonicbim.appspot.com"}
+[debug] [2023-11-19T04:53:08.495Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sonicbim/sites 
+[debug] [2023-11-19T04:53:09.261Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sonicbim/sites 200
+[debug] [2023-11-19T04:53:09.261Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sonicbim/sites {"sites":[{"name":"projects/sonicbim/sites/sonicbim","defaultUrl":"https://sonicbim.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-19T04:53:09.261Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim/webApps/-/config [none]
+[debug] [2023-11-19T04:53:09.936Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim/webApps/-/config 200
+[debug] [2023-11-19T04:53:09.936Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim/webApps/-/config {"projectId":"sonicbim","storageBucket":"sonicbim.appspot.com","apiKey":"AIzaSyAWTEYkU7vnVT74Y8kUeDy7Tteq03yDJZc","authDomain":"sonicbim.firebaseapp.com","messagingSenderId":"221067768349"}
+[debug] [2023-11-19T04:53:09.938Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim [none]
+[debug] [2023-11-19T04:53:10.251Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim 200
+[debug] [2023-11-19T04:53:10.252Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sonicbim {"projectId":"sonicbim","projectNumber":"221067768349","displayName":"sonicbim","name":"projects/sonicbim","resources":{"hostingSite":"sonicbim"},"state":"ACTIVE","etag":"1_014b36c4-0be8-4955-b180-69e97403ca5a"}
+[info] i  hosting[sonicbim]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[sonicbim]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-11-19T04:53:10.260Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-11-19T04:53:10.260Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-11-19T04:53:10.260Z] Starting Emulator UI with command {"binary":"node","args":["/home/merh/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/merh/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-11-19T04:53:10.307Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[info] i  functions: Watching "/home/merh/projects/sonicbim/api.sonicbim/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/merh/projects/sonicbim/api.sonicbim/functions\" for Cloud Functions..."}}
+[debug] [2023-11-19T04:53:10.520Z] Validating nodejs source
+[debug] [2023-11-19T04:53:11.284Z] > [functions] package.json contents: {
+  "name": "api.sonicbim",
+  "description": "SONICBIM Cloud Functions",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "firebase emulators:start",
+    "shell": "firebase functions:shell",
+    "dev": "nodemon dev.js",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@fastify/routes": "^5.1.0",
+    "@supabase/supabase-js": "^2.38.4",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "prettier": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-19T04:53:11.284Z] Building nodejs source
+[debug] [2023-11-19T04:53:11.284Z] Failed to find version of module node: reached end of search path /home/merh/projects/sonicbim/api.sonicbim/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-11-19T04:53:11.286Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-19T04:53:11.288Z] Found firebase-functions binary at '/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8358
+
+[debug] [2023-11-19T04:53:11.639Z] Got response from /__/functions.yaml {"endpoints":{"main":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"main"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: main. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: main."}}
+[info] ✔  functions[asia-southeast1-main]: http function initialized (http://127.0.0.1:5001/sonicbim/asia-southeast1/main). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/sonicbim/asia-southeast1/main)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] [hosting] Rewriting /list_projects to http://127.0.0.1:5001/sonicbim/asia-southeast1/main for local Function asia-southeast1/main
+[debug] [2023-11-19T04:53:37.489Z] >>> [apiv2][query] GET http://127.0.0.1:5001/sonicbim/asia-southeast1/main/list_projects 
+[debug] [2023-11-19T04:53:37.490Z] [work-queue] {"queuedWork":["/sonicbim/asia-southeast1/main/list_projects-2023-11-19T04:53:37.490Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:53:37.491Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sonicbim/asia-southeast1/main/list_projects-2023-11-19T04:53:37.490Z"],"workRunningCount":1}
+[debug] [2023-11-19T04:53:37.491Z] Accepted request GET /sonicbim/asia-southeast1/main/list_projects --> asia-southeast1-main
+[debug] [2023-11-19T04:53:37.491Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-19T04:53:37.491Z] [functions] Got req.url=/sonicbim/asia-southeast1/main/list_projects, mapping to path=/list_projects {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sonicbim/asia-southeast1/main/list_projects, mapping to path=/list_projects"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-11-19T04:53:37.495Z] [worker-pool] addWorker(asia-southeast1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(asia-southeast1-main)"}}
+[debug] [2023-11-19T04:53:37.495Z] [worker-pool] Adding worker with key asia-southeast1-main, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key asia-southeast1-main, total=1"}}
+[debug] [2023-11-19T04:53:37.798Z] [runtime-status] [960] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-11-19T04:53:37.798Z] [runtime-status] [960] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:53:37.799Z] [runtime-status] [960] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-11-19T04:53:37.799Z] [runtime-status] [960] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:53:37.878Z] [runtime-status] [960] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-11-19T04:53:37.878Z] [runtime-status] [960] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-11-19T04:53:37.878Z] [runtime-status] [960] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:53:37.879Z] [runtime-status] [960] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-11-19T04:53:37.880Z] [runtime-status] [960] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:53:37.880Z] [runtime-status] [960] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-11-19T04:53:37.957Z] [runtime-status] [960] Functions runtime initialized. {"cwd":"/home/merh/projects/sonicbim/api.sonicbim/functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Functions runtime initialized. {\"cwd\":\"/home/merh/projects/sonicbim/api.sonicbim/functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2023-11-19T04:53:37.957Z] [runtime-status] [960] Listening to port: /tmp/fire_emu_0e8c2b45514e7cd3.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [960] Listening to port: /tmp/fire_emu_0e8c2b45514e7cd3.sock"}}
+[debug] [2023-11-19T04:53:38.001Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: IDLE"}}
+[debug] [2023-11-19T04:53:38.001Z] [worker-pool] submitRequest(triggerId=asia-southeast1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-southeast1-main)"}}
+[info] i  functions: Beginning execution of "asia-southeast1-main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Beginning execution of \"asia-southeast1-main\""}}
+[debug] [2023-11-19T04:53:38.001Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: BUSY"}}
+[debug] [2023-11-19T04:53:38.012Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "asia-southeast1-main" in 10.437821ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finished \"asia-southeast1-main\" in 10.437821ms"}}
+[debug] [2023-11-19T04:53:38.012Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: IDLE"}}
+[debug] [2023-11-19T04:53:38.012Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-19T04:53:38.012Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-19T04:53:38.012Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:53:38.013Z] <<< [apiv2][status] GET http://127.0.0.1:5001/sonicbim/asia-southeast1/main/list_projects 500
+[debug] [2023-11-19T04:53:38.013Z] <<< [apiv2][body] GET http://127.0.0.1:5001/sonicbim/asia-southeast1/main/list_projects [stream]
+[info] i  hosting: 127.0.0.1 - - [19/Nov/2023:04:53:38 +0000] "GET /list_projects HTTP/1.1" 500 86 "-" "HTTPie" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [19/Nov/2023:04:53:38 +0000] \"GET /list_projects HTTP/1.1\" 500 86 \"-\" \"HTTPie\""}}
+[info] [hosting] Rewriting /register_project to http://127.0.0.1:5001/sonicbim/asia-southeast1/main for local Function asia-southeast1/main
+[debug] [2023-11-19T04:53:47.324Z] >>> [apiv2][query] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project 
+[debug] [2023-11-19T04:53:47.324Z] >>> [apiv2][body] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project [stream]
+[debug] [2023-11-19T04:53:47.325Z] [work-queue] {"queuedWork":["/sonicbim/asia-southeast1/main/register_project-2023-11-19T04:53:47.325Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:53:47.325Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sonicbim/asia-southeast1/main/register_project-2023-11-19T04:53:47.325Z"],"workRunningCount":1}
+[debug] [2023-11-19T04:53:47.325Z] Accepted request POST /sonicbim/asia-southeast1/main/register_project --> asia-southeast1-main
+[debug] [2023-11-19T04:53:47.325Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-19T04:53:47.325Z] [functions] Got req.url=/sonicbim/asia-southeast1/main/register_project, mapping to path=/register_project {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sonicbim/asia-southeast1/main/register_project, mapping to path=/register_project"}}
+[debug] [2023-11-19T04:53:47.325Z] [worker-pool] submitRequest(triggerId=asia-southeast1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-southeast1-main)"}}
+[info] i  functions: Beginning execution of "asia-southeast1-main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Beginning execution of \"asia-southeast1-main\""}}
+[debug] [2023-11-19T04:53:47.326Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: BUSY"}}
+[debug] [2023-11-19T04:53:49.023Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "asia-southeast1-main" in 1697.853086ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finished \"asia-southeast1-main\" in 1697.853086ms"}}
+[debug] [2023-11-19T04:53:49.024Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: IDLE"}}
+[debug] [2023-11-19T04:53:49.024Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-19T04:53:49.024Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-19T04:53:49.024Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:53:49.024Z] <<< [apiv2][status] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project 400
+[debug] [2023-11-19T04:53:49.024Z] <<< [apiv2][body] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project [stream]
+[info] i  hosting: 127.0.0.1 - - [19/Nov/2023:04:53:49 +0000] "POST /register_project HTTP/1.1" 400 45 "-" "HTTPie" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [19/Nov/2023:04:53:49 +0000] \"POST /register_project HTTP/1.1\" 400 45 \"-\" \"HTTPie\""}}
+[debug] [2023-11-19T04:54:09.595Z] File /home/merh/projects/sonicbim/api.sonicbim/functions/routes/listProjects.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/merh/projects/sonicbim/api.sonicbim/functions/routes/listProjects.js changed, reloading triggers"}}
+[debug] [2023-11-19T04:54:10.597Z] Validating nodejs source
+[debug] [2023-11-19T04:54:11.881Z] > [functions] package.json contents: {
+  "name": "api.sonicbim",
+  "description": "SONICBIM Cloud Functions",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "firebase emulators:start",
+    "shell": "firebase functions:shell",
+    "dev": "nodemon dev.js",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@fastify/routes": "^5.1.0",
+    "@supabase/supabase-js": "^2.38.4",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "prettier": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-19T04:54:11.881Z] Building nodejs source
+[debug] [2023-11-19T04:54:11.881Z] Failed to find version of module node: reached end of search path /home/merh/projects/sonicbim/api.sonicbim/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-11-19T04:54:11.882Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-19T04:54:11.883Z] Found firebase-functions binary at '/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8325
+
+[debug] [2023-11-19T04:54:12.071Z] Got response from /__/functions.yaml {"endpoints":{"main":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"main"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: main. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: main."}}
+[debug] [2023-11-19T04:54:12.078Z] [worker-pool] Shutting down IDLE worker (asia-southeast1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (asia-southeast1-main)"}}
+[debug] [2023-11-19T04:54:12.079Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: FINISHING"}}
+[debug] [2023-11-19T04:54:12.081Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: exited"}}
+[debug] [2023-11-19T04:54:12.081Z] [worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-d8a5d20d-d131-4103-9825-088292d5b5e6]: FINISHED"}}
+[debug] [2023-11-19T04:54:12.429Z] File /home/merh/projects/sonicbim/api.sonicbim/functions/routes/syncProject.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/merh/projects/sonicbim/api.sonicbim/functions/routes/syncProject.js changed, reloading triggers"}}
+[debug] [2023-11-19T04:54:13.429Z] Validating nodejs source
+[debug] [2023-11-19T04:54:13.825Z] > [functions] package.json contents: {
+  "name": "api.sonicbim",
+  "description": "SONICBIM Cloud Functions",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "firebase emulators:start",
+    "shell": "firebase functions:shell",
+    "dev": "nodemon dev.js",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@fastify/routes": "^5.1.0",
+    "@supabase/supabase-js": "^2.38.4",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "prettier": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-19T04:54:13.825Z] Building nodejs source
+[debug] [2023-11-19T04:54:13.825Z] Failed to find version of module node: reached end of search path /home/merh/projects/sonicbim/api.sonicbim/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-11-19T04:54:13.826Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-19T04:54:13.826Z] Found firebase-functions binary at '/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8791
+
+[debug] [2023-11-19T04:54:14.007Z] Got response from /__/functions.yaml {"endpoints":{"main":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-southeast1"],"labels":{},"httpsTrigger":{},"entryPoint":"main"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: main. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: main."}}
+[info] [hosting] Rewriting /register_project to http://127.0.0.1:5001/sonicbim/asia-southeast1/main for local Function asia-southeast1/main
+[debug] [2023-11-19T04:54:16.374Z] >>> [apiv2][query] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project 
+[debug] [2023-11-19T04:54:16.374Z] >>> [apiv2][body] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project [stream]
+[debug] [2023-11-19T04:54:16.375Z] [work-queue] {"queuedWork":["/sonicbim/asia-southeast1/main/register_project-2023-11-19T04:54:16.375Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:54:16.375Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sonicbim/asia-southeast1/main/register_project-2023-11-19T04:54:16.375Z"],"workRunningCount":1}
+[debug] [2023-11-19T04:54:16.375Z] Accepted request POST /sonicbim/asia-southeast1/main/register_project --> asia-southeast1-main
+[debug] [2023-11-19T04:54:16.375Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-19T04:54:16.375Z] [functions] Got req.url=/sonicbim/asia-southeast1/main/register_project, mapping to path=/register_project {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sonicbim/asia-southeast1/main/register_project, mapping to path=/register_project"}}
+[debug] [2023-11-19T04:54:16.375Z] [worker-pool] Cleaned up workers for asia-southeast1-main: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for asia-southeast1-main: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-11-19T04:54:16.378Z] [worker-pool] addWorker(asia-southeast1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(asia-southeast1-main)"}}
+[debug] [2023-11-19T04:54:16.378Z] [worker-pool] Adding worker with key asia-southeast1-main, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key asia-southeast1-main, total=1"}}
+[debug] [2023-11-19T04:54:16.672Z] [runtime-status] [1522] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-11-19T04:54:16.672Z] [runtime-status] [1522] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:54:16.672Z] [runtime-status] [1522] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-11-19T04:54:16.673Z] [runtime-status] [1522] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:54:16.731Z] [runtime-status] [1522] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-11-19T04:54:16.731Z] [runtime-status] [1522] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-11-19T04:54:16.731Z] [runtime-status] [1522] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:54:16.732Z] [runtime-status] [1522] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-11-19T04:54:16.732Z] [runtime-status] [1522] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-19T04:54:16.732Z] [runtime-status] [1522] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/merh/projects/sonicbim/api.sonicbim/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-11-19T04:54:16.813Z] [runtime-status] [1522] Functions runtime initialized. {"cwd":"/home/merh/projects/sonicbim/api.sonicbim/functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Functions runtime initialized. {\"cwd\":\"/home/merh/projects/sonicbim/api.sonicbim/functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2023-11-19T04:54:16.814Z] [runtime-status] [1522] Listening to port: /tmp/fire_emu_ded9757c6a94dd41.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[runtime-status] [1522] Listening to port: /tmp/fire_emu_ded9757c6a94dd41.sock"}}
+[debug] [2023-11-19T04:54:16.883Z] [worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: IDLE"}}
+[debug] [2023-11-19T04:54:16.883Z] [worker-pool] submitRequest(triggerId=asia-southeast1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-southeast1-main)"}}
+[info] i  functions: Beginning execution of "asia-southeast1-main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Beginning execution of \"asia-southeast1-main\""}}
+[debug] [2023-11-19T04:54:16.883Z] [worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: BUSY"}}
+[debug] [2023-11-19T04:54:17.480Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "asia-southeast1-main" in 596.676329ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finished \"asia-southeast1-main\" in 596.676329ms"}}
+[debug] [2023-11-19T04:54:17.480Z] [worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: IDLE"}}
+[debug] [2023-11-19T04:54:17.480Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-19T04:54:17.480Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-19T04:54:17.480Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:54:17.480Z] <<< [apiv2][status] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project 400
+[debug] [2023-11-19T04:54:17.480Z] <<< [apiv2][body] POST http://127.0.0.1:5001/sonicbim/asia-southeast1/main/register_project [stream]
+[info] i  hosting: 127.0.0.1 - - [19/Nov/2023:04:54:17 +0000] "POST /register_project HTTP/1.1" 400 45 "-" "HTTPie" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [19/Nov/2023:04:54:17 +0000] \"POST /register_project HTTP/1.1\" 400 45 \"-\" \"HTTPie\""}}
+[info] [hosting] Rewriting /list_projects to http://127.0.0.1:5001/sonicbim/asia-southeast1/main for local Function asia-southeast1/main
+[debug] [2023-11-19T04:54:20.594Z] >>> [apiv2][query] GET http://127.0.0.1:5001/sonicbim/asia-southeast1/main/list_projects 
+[debug] [2023-11-19T04:54:20.595Z] [work-queue] {"queuedWork":["/sonicbim/asia-southeast1/main/list_projects-2023-11-19T04:54:20.595Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:54:20.595Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sonicbim/asia-southeast1/main/list_projects-2023-11-19T04:54:20.595Z"],"workRunningCount":1}
+[debug] [2023-11-19T04:54:20.595Z] Accepted request GET /sonicbim/asia-southeast1/main/list_projects --> asia-southeast1-main
+[debug] [2023-11-19T04:54:20.595Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-19T04:54:20.595Z] [functions] Got req.url=/sonicbim/asia-southeast1/main/list_projects, mapping to path=/list_projects {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sonicbim/asia-southeast1/main/list_projects, mapping to path=/list_projects"}}
+[debug] [2023-11-19T04:54:20.595Z] [worker-pool] submitRequest(triggerId=asia-southeast1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-southeast1-main)"}}
+[info] i  functions: Beginning execution of "asia-southeast1-main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Beginning execution of \"asia-southeast1-main\""}}
+[debug] [2023-11-19T04:54:20.596Z] [worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: BUSY"}}
+[debug] [2023-11-19T04:54:20.687Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "asia-southeast1-main" in 91.1789ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finished \"asia-southeast1-main\" in 91.1789ms"}}
+[debug] [2023-11-19T04:54:20.687Z] [worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"[worker-asia-southeast1-main-f6a5a98b-bc9b-4c33-acb3-3f705e704ef6]: IDLE"}}
+[debug] [2023-11-19T04:54:20.687Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-19T04:54:20.687Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-main"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-19T04:54:20.687Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-19T04:54:20.687Z] <<< [apiv2][status] GET http://127.0.0.1:5001/sonicbim/asia-southeast1/main/list_projects 200
+[debug] [2023-11-19T04:54:20.687Z] <<< [apiv2][body] GET http://127.0.0.1:5001/sonicbim/asia-southeast1/main/list_projects [stream]
+[info] i  hosting: 127.0.0.1 - - [19/Nov/2023:04:54:20 +0000] "GET /list_projects HTTP/1.1" 200 13105 "-" "HTTPie" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [19/Nov/2023:04:54:20 +0000] \"GET /list_projects HTTP/1.1\" 200 13105 \"-\" \"HTTPie\""}}
