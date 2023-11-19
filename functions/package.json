@@ -8,8 +8,9 @@
     "shell": "firebase functions:shell",
     "dev": "nodemon dev.js",
     "start": "npm run shell",
-    "deploy": "firebase deploy",
-    "logs": "firebase functions:log"
+    "deploy": "vitest run && firebase deploy",
+    "logs": "firebase functions:log",
+    "vitest": "vitest run"
   },
   "engines": {
     "node": "18"
@@ -26,7 +27,8 @@
   },
   "devDependencies": {
     "firebase-functions-test": "^3.1.0",
-    "prettier": "^3.1.0"
+    "prettier": "^3.1.0",
+    "vitest": "^0.34.6"
   },
   "private": true
 }
